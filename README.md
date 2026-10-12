@@ -2,5 +2,6 @@ This project uses my C# and SQL querying skills to put together an app that conv
 
 The user can also input their own currency and save it in a locally stored database.
 
+Preview of the application
 <img width="1004" height="594" alt="Screenshot 2026-10-11 215531" src="https://github.com/user-attachments/assets/7c37520a-0adf-4af5-a7f5-781f5f5e9fde" />
 <img width="1105" height="627" alt="Screenshot 2026-10-11 215548" src="https://github.com/user-attachments/assets/42053e5b-9743-440e-b93c-ec4ce4aa0388" />
