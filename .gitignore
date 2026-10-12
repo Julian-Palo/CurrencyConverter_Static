@@ -25,3 +25,6 @@ packages/
 *.tmp
 Thumbs.db
 Desktop.ini
+
+# API key (see CurrencyConverter_Static/secrets.example.config)
+secrets.config

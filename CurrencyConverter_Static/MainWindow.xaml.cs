@@ -90,7 +90,14 @@ namespace CurrencyConverter_Static
         //sets val to asynchronously be set to a currency rate value
         private async void GetValue()
         {
-            val = await GetData<Root>("https://openexchangerates.org/api/latest.json?app_id=86e7e5dfb29b49b6a51be510b412a689"); //API Link
+            //the App ID lives in secrets.config (not on GitHub) so it stays private,
+            //see secrets.example.config for how to set it up
+            string appId = ConfigurationManager.AppSettings["OpenExchangeRatesAppId"];
+            if (string.IsNullOrWhiteSpace(appId))
+            {
+                MessageBox.Show("No Open Exchange Rates App ID found. Copy secrets.example.config to secrets.config and add your App ID.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            val = await GetData<Root>("https://openexchangerates.org/api/latest.json?app_id=" + appId); //API Link
             BindCurrency();
         }
 

@@ -116,6 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="secrets.example.config" />
+    <!--holds the API key; not on GitHub, so it's only included when it exists-->
+    <None Include="secrets.config" Condition="Exists('secrets.config')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Julian_closeup.png" />
