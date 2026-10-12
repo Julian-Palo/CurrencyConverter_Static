@@ -1,0 +1,27 @@
+# Visual Studio cache and user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet packages (restored automatically on build)
+packages/
+*.nupkg
+!packages/build/
+
+# Misc
+*.cache
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini
