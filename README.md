@@ -13,5 +13,3 @@ The live rates come from [Open Exchange Rates](https://openexchangerates.org/sig
 
 1. In the `CurrencyConverter_Static` folder, copy `secrets.example.config` to `secrets.config`.
 2. Replace `YOUR_APP_ID_HERE` with your App ID.
-
-`secrets.config` is in `.gitignore`, so your App ID stays off GitHub.
